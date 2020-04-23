@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Weather App!  </title>
+</head>
+
+<body>
+    <h1>{{city_name}}</h1>
+    <h3>Aktualna tempertatura to: {{temp}} </h3>
+    <h5> Prognoza na 5 dni: </h5>
+    {% for i in tablica_z_prognozą2 %}
+    <div><h4>W kolejnych dniach w okolicy godizny 12:  {{i}}</h4></div>
+    {% endfor %}
+</body>
+</html>
